@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join WhatsApp Group</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        #message {
+            font-size: 18px;
+        }
+        #sendmessage {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="message">Redirecting you to the WhatsApp group...</div>
+    <a href="whatsapp://send?phone=918220847200&text=WHATEVER_LINK_OR_TEXT_YOU_WANT_TO_SEND" id="sendmessage" title="Join WhatsApp Group">Join WhatsApp Group</a>
+
+    <script>
+        var whatsappLink = 'whatsapp://send?phone=918220847200&text=WHATEVER_LINK_OR_TEXT_YOU_WANT_TO_SEND';
+
+        // Automatically redirect to WhatsApp link after a short delay
+        setTimeout(function() {
+            document.getElementById('sendmessage').click();
+        }, 2000); // 2000 milliseconds = 2 seconds
+
+        // Fallback mechanism for users without WhatsApp
+        setTimeout(function() {
+            document.getElementById('sendmessage').style.display = 'block';
+            document.getElementById('message').textContent = 'If you are not redirected, click the link below to join the WhatsApp group.';
+        }, 4000); // 4000 milliseconds = 4 seconds
+    </script>
+</body>
+</html>
