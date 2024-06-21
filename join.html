@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join WhatsApp Group</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        #message {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div id="message">Redirecting you to the WhatsApp group...</div>
+
+    <script>
+
+        
+        
+        //https://chat.whatsapp.com/E9J00WxEsXjLQYGp2Txzum
+        var whatsappGroupLink = 'https://wa.me/6380296524';
+
+        // Redirect to WhatsApp group link after a short delay
+        setTimeout(function() {
+            window.location.href = whatsappGroupLink;
+        }, 3000); // 3000 milliseconds = 3 seconds
+    </script>
+</body>
+</html>
