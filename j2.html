@@ -33,11 +33,6 @@
             document.getElementById('sendmessage').click();
         }, 2000); // 2000 milliseconds = 2 seconds
 
-        // Fallback mechanism for users without WhatsApp
-        setTimeout(function() {
-            document.getElementById('sendmessage').style.display = 'block';
-            document.getElementById('message').textContent = 'If you are not redirected, click the link below to join the WhatsApp group.';
-        }, 4000); // 4000 milliseconds = 4 seconds
     </script>
 </body>
 </html>
